@@ -1,0 +1,91 @@
+html {
+  align-items: center;
+  background-color: #050033;
+  color: #c5c8c6;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  font: 22px/1 "Inconsolata", monospace;
+}
+
+body {
+  background-color: #1d1f21;
+  border-radius: 2px;
+  color: #c5c8c6;
+  display: flex;
+  flex-direction: column;
+  min-height: 30ch;
+  min-width: 50vw;
+  padding: 2em;
+  box-shadow: 1px 1px 6px #1d1f2187;
+}
+
+p {
+  margin: 0;
+}
+
+p span {
+  color: #b5bd68;
+}
+
+p #cursor {
+  background-color: #b5bd68;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  font-weight: bold;
+}
+
+ul:nth-child(5n + 1) li:first-child {
+  color: #a54242;
+}
+
+ul:nth-child(5n + 2) li:first-child {
+  color: #de935f;
+}
+
+ul:nth-child(5n + 3) li:first-child {
+  color: #f0c674;
+}
+
+ul:nth-child(5n + 4) li:first-child {
+  color: #8c9440;
+}
+
+ul:nth-child(5n + 5) li:first-child {
+  color: #85678f;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  margin: 0 0 1em;
+}
+
+nav {
+  column-gap: 2em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1em 0;
+}
