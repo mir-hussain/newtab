@@ -7,54 +7,138 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link rel="stylesheet" href="./dist/css/all.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="./dist/css/styles.min.css"
     />
-    <title>user@home &gt; newtab</title>
+    <script defer src="scripts.js"></script>
+    <title>mir@root &gt; newtab</title>
   </head>
   <body>
-    <p><span>user@home &gt; </span>newtab</p>
-    <nav>
-      <ul>
-        <li>general</li>
-        <li>
-          <a href="https://www.facebook.com">facebook</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/">YouTube</a>
-        </li>
-        <li>
-          <a href="https://mail.google.com/mail/u/0/"
-            >Personal Gmail</a
-          >
-        </li>
-        <li>
-          <a href="https://mail.google.com/mail/u/5/#inbox"
-            >Professional Gmail</a
-          >
-        </li>
-        <li>
-          <a href="https://web.programming-hero.com/"
-            >Programming Hero</a
-          >
-        </li>
-        <li>
-          <a href="https://www.freecodecamp.org/learn/"
-            >Free Code Camp</a
-          >
-        </li>
-        <li>
-          <a href="https://docs.google.com/document/u/0/"
-            >Google Doc</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <main>
+      <div class="terminal">
+        <div class="terminal__control">
+          <ul class="tabs">
+            <li class="tabs__name">PROBLEMS</li>
+            <li class="tabs__name">OUTPUT</li>
+            <li class="tabs__name">DEBUG CONSOLE</li>
+            <li class="tabs__name">TERMINAL</li>
+          </ul>
+          <div class="controls">
+            <div class="controls__icon bash">bash</div>
+            <div class="controls__icon add">
+              <span class="fas fa-plus"></span>
+            </div>
+            <div class="controls__icon up">
+              <span class="fas fa-chevron-up"></span>
+            </div>
+            <div class="controls__icon cross">
+              <span class="fas fa-times"></span>
+            </div>
+          </div>
+        </div>
+        <p class="terminal__location">
+          <span class="user">user@mir &gt; </span>
+          <span class="version"> MINGW64 </span>
+          <span class="dir">
+            /c/Program File/Firefox Developer Edition
+          </span>
+          <span class="branch"> (master) </span>
+        </p>
+        <div class="command">$ time</div>
+        <p id="time"></p>
+        <p class="terminal__location">
+          <span class="user">user@mir &gt; </span>
+          <span class="version"> MINGW64 </span>
+          <span class="dir">
+            /c/Program File/Firefox Developer Edition
+          </span>
+          <span class="branch"> (master) </span>
+        </p>
+        <div class="command">$ newtab</div>
+        <nav class="terminal__navigation">
+          <ul class="list">
+            <li class="list__name">◦ Personal</li>
+            <li class="list__link">
+              <a href="https://www.facebook.com"
+                >└ facebook</a
+              >
+            </li>
+            <li class="list__link">
+              <a href="https://www.youtube.com/"
+                >└ YouTube</a
+              >
+            </li>
+            <li class="list__link">
+              <a href="https://mail.google.com/mail/u/0/"
+                >└ Personal Gmail</a
+              >
+            </li>
 
-    <p>
-      <span>user@home &gt; </span>
-      <span id="cursor">_</span>
-    </p>
+            <li class="list__link">
+              <a href="https://web.programming-hero.com/"
+                >└ Programming Hero</a
+              >
+            </li>
+            <li class="list__link">
+              <a href="https://www.freecodecamp.org/learn/"
+                >└ Free Code Camp</a
+              >
+            </li>
+          </ul>
+          <ul class="list">
+            <li class="list__name">Work</li>
+            <li class="list__link">
+              <a
+                href="https://mail.google.com/mail/u/5/#inbox"
+                >└ Professional Gmail</a
+              >
+            </li>
+            <li class="list__link">
+              <a href="https://github.com/mir-hussain"
+                >└ GitHub</a
+              >
+            </li>
+            <li class="list__link">
+              <a
+                href="https://docs.google.com/document/u/0/"
+                >└ Google Doc</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="terminal__location">
+          <span class="user">user@mir &gt; </span>
+          <span class="version"> MINGW64 </span>
+          <span class="dir">
+            /c/Program File/Firefox Developer Edition
+          </span>
+          <span class="branch"> (master) </span>
+        </p>
+        <!-- <div class="command">
+          $
+          <div id="cursor"></div>
+        </div> -->
+        <div class="command last-command">
+          <label for="search-box">$</label>
+
+          <input
+            type="text"
+            name="search-box"
+            id="search-box"
+          />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
